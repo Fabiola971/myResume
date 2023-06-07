@@ -1,0 +1,194 @@
+.box{
+	border: 20px solid rgba(0, 0, 0, 0.3);
+	width: 200px;
+	height: 150px;
+	background-color: peachpuff;
+	/* rend la bordure transparente */
+	-moz-background-clip: padding-box;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	position: absolute;
+	top: 70px;
+	left: 500px;
+}
+
+body{
+	background: radial-gradient(50px 20px, red 15px, blue 25px);
+	background-repeat: no-repeat;
+}
+/* le carré s'agrandit pendant une durée de 5s */
+#transition{
+	width: 100px;
+	height: 100px;
+	background: #32CD32;
+	transition: width 5s;
+}
+
+#transition:hover{
+	width: 500px;
+}
+/*change de couleur progressivement*/
+.transitionOne{
+	width: 100px;
+	background: #852269;
+	transition: background-color 5s ease-in;
+}
+.transitionOne:hover{
+	background-color: lightyellow;
+}
+
+}
+
+.transitionTwo{
+	width: 200px;
+	height: 200px;
+	background: black;
+	transition: width 3s;
+	transition-timing-function: cubic-biezer(0,0,1,1);
+	-webkit-transition: width 3s;
+	-webkit-transition-timing-function: cubic-biezer(0,0,1,1);
+}
+
+.transitionTwo:hover{
+width: 700px;
+}
+/* faire pivoter un élément */
+.rotate{
+	height: 200px;
+	width: 300px;
+	background-color: powderblue;
+	margin-top: 50px;
+}
+
+.rotate{
+	height: 200px;
+	width: 300px;
+	background-color: papayawhip;
+	margin: 50px;
+	transform: rotate(45deg);
+}
+
+.rotateInverse{
+	height: 200px;
+	width: 300px;
+	background-color: papayawhip;
+	margin: 50px;
+	transform: rotate(-45deg);
+}
+
+.empty{
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin-top: 100px;
+	padding: 10px;
+	border:2px solid black;
+}
+/*change la rottion par son centre en modifiant l'axe horizontal-x, l'axe vertical -y*/
+.green{
+	padding: 50px;
+	position: absolute;
+	background-color: #8bc34a;
+	border: 1px solid white;
+	transform: rotate(15deg);
+	transform-origin: 25% 75%;
+}
+ .translate{
+ 	width: 260px;
+ 	height: 50px;
+ 	margin-top: 200px;
+ 	background-color: palegoldenrod;
+ 	transform-origin: bottom center;
+ 	transform: translate(-100px, 200px);
+ }
+
+.skew{
+	height: 260px;
+	width: 50px;
+	margin-top: 200px;
+	background-color: wheat;
+	transform: skew(10deg);
+	-webkit-transform: skew(10deg);
+}
+/*plusieurs changement de couleur*/
+.colorchange{
+	height: 400px;
+	width: 400px;
+	margin-top: 400px;
+	background-color: #707B7C;
+	animation-name: colorchange;
+	animation-duration: 2s;
+	-webkit-animation-name: colorchange;
+	-webkit-animation-duration: 2s;
+}
+
+@keyframes colorchange{
+	0% {background-color: #707B7C; }
+	50% {background-color: #239B56; }
+	100% {background-color: #21618C; }
+}
+-webkit-@keyframes colorchange{
+	0% {background-color: #707B7C; }
+	50% {background-color: #239B56; }
+	100% {background-color: #21618C; }
+}
+/*perspective carré dans un carré en mode 3d*/
+.emptyDiv{
+	height: 200px;
+	width: 200px;
+	margin: 30px;
+	padding: 10px;
+	border: 2px solid black;
+	perspective: 100px;
+	-webkit-perspective: 100px;
+}
+
+div.turquoise{
+	padding: 60px;
+	background-color: powderblue;
+	border: 2px solid rgb(212, 172, 13);
+	transform: rotateX(45deg);
+	-webkit-transform: rotateX(45deg);
+
+}
+/* mettre une ombre */
+img{
+	width: 130px;
+	height: 100px;
+}
+
+.drop-shadow{
+	filter: drop-shadow(5px 9px 2px #229954);
+	webkit-filter: drop-shadow(5px 9px 2px #229954);
+}
+
+/*mettre un filtre gris, sepia, saturate(percent or number), opacity(0%opacité complète)
+, brightness(percent 100% unchanged or number 0.5=50%, 1=100%), blur(px)*/
+.original{
+ 	width: 260px;
+ 	height: 200px;
+}
+
+.filtered{
+	width: 260px;
+ 	height: 200px;
+ 	filter: grayscale(50%);
+
+}
+.originalOne{
+ 	width: 260px;
+ 	height: 200px;
+}
+
+.filteredInvert{
+	width: 260px;
+ 	height: 200px;
+ 	filter: invert(80%);
+
+}
+
+
+
+
+
+
