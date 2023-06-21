@@ -4,7 +4,7 @@ const  x = load.children;
 console.log("x: ", x)
 
 
-let count = 1;
+let count = 0;
 
     
 for (let index = 0; index < x.length; index++) {
