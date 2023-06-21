@@ -234,18 +234,11 @@ figcaption{
 	margin: 150px auto ;
 }
 
-.interest{
-	position: relative;
-}
-
 .interest h2{
-	position: absolute;
-	left: 100px;
+	text-align: center;
 }
 
 @media screen and (max-width: 818px){
-	
-
 	header, footer{
 		height: 120px;
 	}
@@ -270,10 +263,6 @@ figcaption{
 		width: 250px;
 		height: 180px;
 		margin: 0 30px 50px auto;
-	}
-
-	.interest h2{
-		left: 28px;
 	}
 }
 
@@ -323,49 +312,21 @@ figcaption{
 	.interest div{
 		flex-direction: column;
 		align-items: center;
-
 	}
 
 	.interest figure{
 		margin: 20px;
-	}
-	.interest h2{
-		left: 45px;
-	}
+	}	
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1921px) {
 	.interest h2{
-		left: 50px;
+		margin-left: 40%;
+		margin-right: 40%;	
 	}
 }
 
 
-
-@media only screen and (min-width: 1500px) {
-	.interest h2{
-		left: 65px;
-	}
-}
-
-@media only screen and (min-width: 1800px) {
-	.interest h2{
-		left: 80px;
-	}
-}
-
-@media only screen and (min-width: 2000px) {
-	.interest h2{
-		left: 105px;
-	}
-}
-
-@media only screen and (min-width: 2200px) {
-	.interest h2{
-		left: 112px;
-	}
-}
 
 	
 		
