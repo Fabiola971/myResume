@@ -11,18 +11,21 @@ for (let index = 0; index < x.length; index++) {
     x[index].addEventListener('click', function(){
         console.log(x[index])
         if (x[index] === x[2]) {
-            count++
-            alert('Vous êtes la '  + count + 'è personne à télècharger mon cv.')
+            count++;
+            alert( 'Vous êtes la '  + count + 'è personne à télècharger mon cv.')
         } else {
             
         }
-
-    });
-    
-    
+    });    
 }
+
+// set up date-year
+let year = document.querySelector('footer span');
+const date = new Date();
+year.innerHTML = date.getFullYear();
    
 
- 
+
+
    
  
